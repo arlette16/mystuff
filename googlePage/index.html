@@ -8,19 +8,10 @@
 </head>
 
 <style>
-*
-{
-    text-align: center;
-}
-
 #titre
 {
-	font-size: 150px;
-}
-
-span
-{
-	
+	font-size: 110px;
+	margin: 20px;
 }
 
 .g
@@ -33,7 +24,7 @@ span
 	color: red;
 }
 
-.oe
+.o2
 {
 	color: yellow;
 }
@@ -45,46 +36,56 @@ span
 
 .barre
 {
-	 width: 30px;
-	 height: 30px; 
-	 border: 1px solid black;
-	 border-bottom-color: solid black;
+	height: 30px;
+	width: 600px;
+    border-radius: 5px;
 }
 
-h4.oe
+.entete
 {
-background-color: teal;
+	height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: 10px;
 }
 
-.ques
+.bouttons
 {
-	background-color: blue;
+	background-color: white;
+	text-align: center;
 }
 
-.ques,.l
+@media screen and (max-width: 603px)
 {
-	font-style: italic;
-}
-
-.ques > p
-{
-	color: purple;
-	font-size: 50px;
+	#titre
+	{
+        font-size: 70px
+	}
+	.barre
+	{
+		width: 300px;
+	}
+	.entete
+	{
+		margin: 50px;
+		padding: 20px;
+	}
 }
 
 </style>
 
 <body>
+	<div class="entete">
 	<p id="titre">
-		<span class="g">G</span><span class="o">o</span><span class="oe">o</span><span class="g">g</span><span class="l">l</span><span class="o">e</span>
+		<span class="g">G</span><span class="o">o</span><span class="o2">o</span><span class="g">g</span><span class="l">l</span><span class="o">e</span>
 	</p>
+    <input type="text" class="barre">
+    </div>
 
-	<h4 class="oe"> Bienvenue sur la page officielle de google!!</h4>
-
-	<div class="barre"></div>
-
-    <p class="ques"> vous avez des questions??</p>
-	<p class="ques l">vous y trouverez toutes les reponses!!</p>
-    <div class="ques"><p>My name's Leto</p></div>
-
+    <div class="bouttons">
+    	<a href="arlette.com" style="text-decoration: none;">Recherche Google</a></br>
+    	<p>Google disponible en: <a href="arlette.com">English</a></p>
+    </div>
 </body>
